@@ -7,7 +7,7 @@ app.get('/',(req,res)=>{
     res.render('index',{title:'Rejin'});
 });
 app.get('/:name',(req,res)=>{
-    res.render('index',{title:req.params.name});
+    res.render('home',{nam:req.params.name});
 });
 
 app.listen(3000,()=>{
