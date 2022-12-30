@@ -23,7 +23,7 @@ app.set('view engine','ejs');
 app.use(express.static(__dirname+'/public'));
 
 app.get('/',(req,res)=>{
-    console.log(database);
+    // console.log(database);
     res.render('index',{title:title});
 });
 app.get('/:name',(req,res)=>{
