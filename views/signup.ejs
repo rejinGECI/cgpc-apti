@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/head')%>
+<body>
+    <%-include('./partials/header')%>
+    <div class="container text-center signup-div">
+        <h3 class="">Sign Up</h3>
+    </div>
+    <form class="col-md-4 signup-form">
+        <div class="form-group">
+            <label for="uname">Name <span>*</span></label>
+            <input type="text" class="form-control" id="uname" aria-describedby="emailHelp" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <label for="upyear">Passout Year</label>
+            <input type="text" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter passout year (Eg: 2023)" value="2023">
+        </div>
+        <div class="form-group">
+            <label for="ubranch">Branch</label>
+            <select id="ubranch" class="selectpicker form-control" width="auto">
+                <option selected value="it" class="input-small">IT</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="me">ME</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="uemail">Email address</label>
+            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="uemail">Email address</label>
+            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="upswd">Password</label>
+            <input type="password" class="form-control" id="upswd" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">LOGIN</button>
+    </form>
+    <div class="container text-center">
+        <a href="/signup" class="signup-link">Sign Up</a>
+    </div>
+    <%-include('./partials/footer')%>
+    <script src="signup-script.js"></script>
+</body>
+</html>
+   
+   
+    <!-- <div class="signup-form">
+        <form action="/signup" method="post">
+            <label for="uemail">Email ID:<span>*</span></label>
+            <input type="email" name="uemail" id="uemail" placeholder="Email Id" required>
+            <label for="umob">Mobile No:<span>*</span></label>
+            <input type="text" name="umob" id="umob" placeholder="Mobile Number" required>
+            <label for="upswd">Password:<span>*</span></label>
+            <input type="password" name="upswd" id="upswd" placeholder="Password" required>
+            <label for="urpswd">Retype Password:<span>*</span></label>
+            <input type="password" name="urpswd" id="urpswd" placeholder="Retype Password" required>
+            <input type="submit" value="Sign Up" id="submit">
+        </form>
+        <h1 id="hid"></h1>
+        <a href="/">Login</a>
+    </div> -->

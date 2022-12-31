@@ -7,32 +7,35 @@
 body{
     font-family: 'Poppins',sans-serif;
 }
-h1,h2,h3{
-    text-align: center;
+header{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    vertical-align: center;
 }
-h1{
-    font-size: 1rem;
+.apti-heading{
+    font-weight: bolder;
 }
-h2{
-    font-weight: 500;
-    margin-top:8vh;
-    text-transform: uppercase;
-    font-size: 1rem;
+.cgpc-heading{
+    color:grey;
 }
-h3{
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    margin-top:10px;
+.login-div,.signup-div{
+    padding:15px 0;
+}
+.clear{
+    clear:both;
 }
 .signup-form{
     border:1px solid gray;
-    width:20vw;
     padding:2vh 2vw;
-    position:absolute;
+    /* position:absolute;
     left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top:50%; */
+    /* transform: translate(-50%,-50%); */
     box-shadow: 0 5px 10px rgba(0,125,124,0.4);
+    margin:20px auto;
+}
+.signup-link{
+    display: block;
+    margin:0 auto;
 }
 input{
     display: block;
@@ -43,4 +46,28 @@ input{
 input[type='submit']{
     width:95%;
     margin-top:20px;
+}
+span{
+    color:red;
+}
+.login-form{
+    border:1px solid gray;
+    width:20vw;
+    padding:2vh 2vw;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px rgba(0,125,124,0.4);
+}
+a{
+    text-decoration: none;
+    margin:0 auto;
+    padding:0 90px;
+}
+.card-footer{
+    text-align: center;
+    /* box-shadow: 0 -10px 10px rgba(0,0,0,0.4); */
+    vertical-align: center;
+    margin:10px 0;
 }

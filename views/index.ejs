@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
+<%-include('./partials/head')%>
 <body>
-    <h2>Govt. Engineering College Idukki</h2>
-    <h1>Career Guidance and Placements Cell</h1>
-    <h3>CGPC - APTI : Sign Up</h3>
-    <div class="signup-form">
-        <form action="/signup" method="post">
-            <label for="uemail">Email ID:</label>
-            <input type="email" name="uemail" id="uemail" placeholder="Email Id">
-            <label for="umob">Mobile No:</label>
-            <input type="text" name="umob" id="umob" placeholder="Mobile Number">
-            <label for="upswd">Password:</label>
-            <input type="password" name="upswd" id="upswd" placeholder="Password">
-            <label for="urpswd">Retype Password:</label>
-            <input type="password" name="urpswd" id="urpswd" placeholder="Retype Password">
-            <input type="submit" value="Sign Up" id="submit">
-        </form>
+    <%-include('./partials/header')%>
+    <div class="container text-center login-div">
+        <h3 class="">Login</h3>
     </div>
-    <h1 id="hid">text</h1>
-    <script src="script.js"></script>
+    <form class="col-md-4 signup-form">
+        <div class="form-group">
+            <label for="uemail">Email address</label>
+            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="upswd" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">LOGIN</button>
+    </form>
+    <div class="container text-center">
+        <a href="/signup" class="signup-link">Sign Up</a>
+    </div>
+    <%-include('./partials/footer')%>
+    <script src="login-script.js"></script>
 </body>
 </html>
