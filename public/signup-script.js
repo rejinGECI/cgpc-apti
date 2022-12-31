@@ -13,7 +13,7 @@ submitbtn.disabled=true;
 //     rpswd:urpswd.value
 // }
 console.log(urpswd);
-urpswd.addEventListener('blur',()=>{
+urpswd.addEventListener('keyup',()=>{
     console.log(upswd.value.length);
     if(upswd.value.length>0&&urpswd.value.length>0&&upswd.value==urpswd.value){
         submitbtn.disabled=false;
