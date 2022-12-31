@@ -1,1 +1,46 @@
-body{background-color: aqua;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@400;700&display=swap'); 
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+h1,h2,h3{
+    text-align: center;
+}
+h1{
+    font-size: 1rem;
+}
+h2{
+    font-weight: 500;
+    margin-top:8vh;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top:10px;
+}
+.signup-form{
+    border:1px solid gray;
+    width:20vw;
+    padding:2vh 2vw;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px rgba(0,125,124,0.4);
+}
+input{
+    display: block;
+    margin:6px 0;
+    height:30px;
+    width:15vw;
+}
+input[type='submit']{
+    width:95%;
+    margin-top:20px;
+}

@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1><%=title%></h1>
-    <form action="/" method="get">
-        <input type="text" name="nam" id="">
-        <input type="submit" value="submit">
-    </form>
+    <h2>Govt. Engineering College Idukki</h2>
+    <h1>Career Guidance and Placements Cell</h1>
+    <h3>CGPC - APTI : Sign Up</h3>
+    <div class="signup-form">
+        <form action="/signup" method="post">
+            <label for="uemail">Email ID:</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Email Id">
+            <label for="umob">Mobile No:</label>
+            <input type="text" name="umob" id="umob" placeholder="Mobile Number">
+            <label for="upswd">Password:</label>
+            <input type="password" name="upswd" id="upswd" placeholder="Password">
+            <label for="urpswd">Retype Password:</label>
+            <input type="password" name="urpswd" id="urpswd" placeholder="Retype Password">
+            <input type="submit" value="Sign Up" id="submit">
+        </form>
+    </div>
+    <h1 id="hid">text</h1>
+    <script src="script.js"></script>
 </body>
 </html>
