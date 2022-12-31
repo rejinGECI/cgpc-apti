@@ -6,7 +6,7 @@
     <div class="container text-center signup-div">
         <h3 class="">Sign Up</h3>
     </div>
-    <form class="col-md-4 signup-form">
+    <form class="col-md-4 signup-form" method="post" action="/signup">
         <div class="form-group">
             <label for="uname">Name <span>*</span></label>
             <input type="text" class="form-control" id="uname" aria-describedby="emailHelp" placeholder="Enter name" required>
@@ -26,24 +26,28 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="uemail">Email address</label>
-            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="uemail">Email address <span>*</span></label>
+            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email" required>
         </div>
         <div class="form-group">
-            <label for="uemail">Email address</label>
-            <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="upswd">Password <span>*</span></label>
+            <input type="password" class="form-control" id="upswd" placeholder="Password" required>
         </div>
         <div class="form-group">
-            <label for="upswd">Password</label>
-            <input type="password" class="form-control" id="upswd" placeholder="Password">
+            <label for="urpswd">Retype Password <span>*</span></label>
+            <input type="password" class="form-control" id="urpswd" placeholder="Password" required>
         </div>
         <div class="col-md-12 text-center">
-            <button type="submit" class="btn btn-primary text-center signup-btn">REGISTER</button>
+            <button type="submit" class="btn btn-primary text-center signup-btn" id="submit">REGISTER</button>
+        </div>
+        <div class="container text-center">
+            <h6 id="hidden-msg"></h6>
         </div>
     </form>
     <div class="container text-center">
-        <a href="/signup" class="signup-link">Sign Up</a>
+        <a href="/" class="signup-link">Login</a>
     </div>
+
     <%-include('./partials/footer')%>
     <script src="signup-script.js"></script>
 </body>

@@ -14,6 +14,7 @@ app.get("/signup",(req,res)=>{
 })
 app.post("/signup",(req,res)=>{
     console.log(req.body);
+    res.render('signup-success');
 })
 app.listen(3000,()=>{
     console.log("Server listening on port 3000");

@@ -3,6 +3,7 @@ uemail=document.getElementById('uemail');
 umob=document.getElementById('umob');
 upswd=document.getElementById('upswd');
 urpswd=document.getElementById('urpswd');
+var hid=document.getElementById('hidden-msg');
 var submitbtn=document.getElementById('submit');
 submitbtn.disabled=true;
 // const params={
@@ -13,11 +14,13 @@ submitbtn.disabled=true;
 // }
 console.log(urpswd);
 urpswd.addEventListener('blur',()=>{
-    if(upswd.value!==urpswd.value){
-        hid.innerHTML='Password doesnt match';
-        hid.style.color='red';
-    }else{        
+    console.log(upswd.value.length);
+    if(upswd.value.length>0&&urpswd.value.length>0&&upswd.value==urpswd.value){
         submitbtn.disabled=false;
+        hid.innerHTML='';
+    }else{        
+        hid.innerHTML=`Password doesn't match`;
+        hid.style.color='red';
     }
 })
 
@@ -26,7 +29,6 @@ urpswd.addEventListener('blur',()=>{
 /*
 xhr.open('POST','/signup',false);
 xhr.setRequestHeader('Content-type','application/json');
-var hid=document.getElementById('hid');
 
 xhr.onload=function(){
     console.log(this.responseText);
